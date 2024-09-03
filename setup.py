@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="FDASST",  # The name of your package
-    version="0.1",  # The initial release version
+    version="0.2",  # The initial release version
     packages=find_packages(),  # Automatically find package directories
     description="A Python package to read disk usage also known as File Disk And System Stats Tool",
     long_description=open("README.md").read(),
