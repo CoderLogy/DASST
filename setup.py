@@ -14,7 +14,7 @@ setup(
     url="https://github.com/CoderLogy/Python-Disk-Usage",  
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GNU General Public License v3.0",
+        "License :: OSI Approved :: GPL version 3",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.8",
