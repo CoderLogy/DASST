@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="disk_usage",  # The name of your package
+    name="FileStats",  # The name of your package
     version="0.1",  # The initial release version
     packages=find_packages(),  # Automatically find package directories
     description="A Python package to read disk usage",
