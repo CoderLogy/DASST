@@ -3,10 +3,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="FileStats",  # The name of your package
+    name="FDASST",  # The name of your package
     version="0.1",  # The initial release version
     packages=find_packages(),  # Automatically find package directories
-    description="A Python package to read disk usage",
+    description="A Python package to read disk usage also known as File Disk And System Stats Tool",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="Shourya Wadhwa",
