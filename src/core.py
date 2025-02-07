@@ -8,6 +8,10 @@ class System_Usage:
         self.unit = unit.upper()
         self.dir = dir
     @property
+    def time_convertor(self) -> float:
+        if self.unit == 'sec':
+            return round(1000,2)
+    @property
     def unit_multiplier(self) -> int:
         if self.unit == 'TB':
             return 1024 ** 4
@@ -108,8 +112,16 @@ class System_Usage:
         }
     def time_of_file(self,file_path: str) -> float:
         start = time.perf_counter()
-
+        with open(file_path,'r') as f:
+            f.read();
         end = time.perf_counter()
         total = end - start
-        print(total)
+        return f"Time Elapsed: {total*1000:.2f}s"
+    
+    def machine_info(self) -> dict:
+        return{
+            "boot_time":psutil.boot_time() * self.time_convertor,
+            "battery":psutil.sensors_battery(),
+        }
 
+print(System_Usage("GB").machine_info())
