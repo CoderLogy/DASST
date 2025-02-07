@@ -108,10 +108,8 @@ class System_Usage:
         }
     def time_of_file(self,file_path: str) -> float:
         start = time.perf_counter()
-        with open(file_path) as file:
-            exec(file.read())
+
         end = time.perf_counter()
         total = end - start
         print(total)
 
-print(System_Usage("GB").network_info())

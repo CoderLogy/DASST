@@ -1,5 +1,14 @@
 {
     "docwriter.progress.trackMethods": false,
     "docwriter.progress.trackFunctions": true,
-    "docwriter.progress.trackClasses": true
+    "docwriter.progress.trackClasses": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*test*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
 }
