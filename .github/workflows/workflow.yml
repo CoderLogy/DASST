@@ -30,7 +30,7 @@ jobs:
 
     - name: Run tests
       run: |
-          python -m unittest discover -s src/tests
+          python -m unittest discover -s /tests
       
     - name: Lint Action
       uses: wearerequired/lint-action@v2.3.0
