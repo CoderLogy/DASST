@@ -118,10 +118,10 @@ class System_Usage:
         total = end - start
         return f"Time Elapsed: {total*1000:.2f}s"
     
-'''   def machine_info(self) -> dict:
+'''  def machine_info(self) -> dict:
         return{
             "boot_time":psutil.boot_time() * self.time_convertor,
             "battery":psutil.sensors_battery(),
         }
 '''
-print(System_Usage("GB").machine_info())
+#print(System_Usage("GB").machine_info())
