@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch,MagicMock
-from core import System_Usage
+from src.core import System_Usage
 
 class Test_Usage(unittest.TestCase):
     def __init__(self, methodName: str = "runTest") -> None:
